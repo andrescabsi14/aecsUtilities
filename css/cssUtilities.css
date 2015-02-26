@@ -1,0 +1,24 @@
+/*/////Limit characters (responsive)
+///////////////////////////////////////////////
+
+	Set css properties on text container:
+
+		max-width: 1000px;            ----->   Define max width or fixed width higher than 30px
+		overflow: hidden;             ----->   Set overflow hidden
+		text-overflow: ellipsis;      ----->   Set text-overflow ellipsis (...) or inherit or initial
+		white-space: nowrap;          ----->   Set white-space
+
+		e.g:*/
+
+			#mytextSelector{
+				max-width: 1000px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			@media only screen and (max-width : 1023px) {
+				#mytextSelector{
+
+					max-width: 40px;
+				}
+			}
